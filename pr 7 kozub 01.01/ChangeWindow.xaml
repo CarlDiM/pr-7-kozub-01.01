@@ -1,0 +1,21 @@
+﻿<Window x:Class="pr_7_kozub_01._01.ChangeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pr_7_kozub_01._01"
+        mc:Ignorable="d"
+        Title="Изменения" Height="195" Width="320" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="20,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="21"><Run Language="ru-ru" Text="Новый возраст: "/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="175,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20"><Run Language="ru-ru" Text="Новый вес: "/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="20,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="20"><Run Language="ru-ru" Text="Новая группа"/><Run Text=": "/></TextBlock>
+        <Button x:Name="transfer" Content="Перевести на следующий курс" HorizontalAlignment="Left" Margin="20,84,0,0" VerticalAlignment="Top" Width="179" Click="transfer_Click"/>
+        <TextBox x:Name="inputNewAge" HorizontalAlignment="Left" Margin="110,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" Height="20"/>
+        <TextBox x:Name="inputNewWeight" HorizontalAlignment="Left" Margin="240,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="50" Height="20"/>
+        <TextBox x:Name="inputNewGroup" HorizontalAlignment="Left" Margin="100,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Height="20"/>
+        <Button x:Name="cancel" IsCancel="True" Content="Отмена" HorizontalAlignment="Left" Margin="220,114,0,0" VerticalAlignment="Top" Width="60" Click="cancel_Click"/>
+        <Button x:Name="accept" IsDefault="True" Content="Подтвердить" HorizontalAlignment="Left" Margin="130,114,0,0" VerticalAlignment="Top" Width="80" Click="accept_Click"/>
+
+    </Grid>
+</Window>
